@@ -1,4 +1,7 @@
 ---
+arch:
+- amd64
+- arm64
 language: python
 python:
   - "3.6"
@@ -44,7 +47,6 @@ script:
   # - docker run --detach --publish 8080:8080 v2v-conversion-host
   # - curl -v http://localhost:8080/healthcheck
   # - docker kill $(docker ps --quiet --latest)
-
 # Galaxy cannot handle the fact that role is in subdirectory
 # notifications:
 #   webhooks: https://galaxy.ansible.com/api/v1/notifications/
